@@ -11,6 +11,14 @@ function CarContainer({ carData, fetchCars }) {
     <h2>Loading</h2>
   ) : carData.error ? (
     <h2>{carData.error}</h2>
+  ) : carData.length === 0 ? (
+    <div
+      class="alert alert-danger text-center"
+      role="alert"
+      style={{ width: "350px", alignItems: "center", margin: "auto" }}
+    >
+      Tidak ada data!
+    </div>
   ) : (
     <div className="row mt-4" id="car-container">
       <Helmet>

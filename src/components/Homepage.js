@@ -359,12 +359,18 @@ const Homepage = () => {
                 <h1 className="card-title fw-bold text-white getting-started__title">
                   Sewa Mobil di Bangka Belitung Sekarang
                 </h1>
-                <p className="card-text text-white">
+                <p className="card-text text-white font-bold">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
                 <button className="btn btn-success mt-4 " id="mulaiSewa2">
-                  Mulai Sewa Mobil
+                  <Link
+                    to="/carimobil"
+                    className="text-white fw-bold"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Mulai Sewa Mobil
+                  </Link>
                 </button>
               </div>
             </div>

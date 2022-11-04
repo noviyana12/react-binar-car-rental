@@ -70,6 +70,7 @@ export const filterCars = (car, driverType, date, passenger) => (dispatch) => {
     );
     console.log(result);
   }
+
   return dispatch({
     type: FILTER_CARS,
     payload: {
